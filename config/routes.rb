@@ -4,7 +4,13 @@ TwitterAssignment::Application.routes.draw do
   match '/auth/twitter/callback' => 'users#oauth_callback', via: :get
 
   match '/home' => 'users#home', via: :get
+
+  match '/tweets' => 'users#tweets', via: :get
   
+  get "users/sign_out"
+
+  get "users/nonfollowers"
+  get "users/fans"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

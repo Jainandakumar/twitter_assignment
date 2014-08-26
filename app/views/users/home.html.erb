@@ -3,36 +3,18 @@
 
 
 
-<div class="row">
-  <div class="col-md-4">
-    <ul class="nav nav-list bs-docs-sidenav" id="juf-left-nav" style="position: relative; top: 0px;" hook="true">
-      <li class="jumbotron" style="position: relative; text-align: center; overflow: hidden; white-space: normal; margin: 2px; text-overflow: ellipsis; padding: 10px;"> Non Followers <span class="glyphicon glyphicon-chevron-right"> </span> </li>
-      <li class="jumbotron" style="position: relative; text-align: center; overflow: hidden; white-space: normal; margin: 2px; text-overflow: ellipsis; padding: 10px;"> Fans <span class="glyphicon glyphicon-chevron-right"> </span> </li>
-      <li class="jumbotron" style="position: relative; text-align: center; overflow: hidden; white-space: normal; margin: 2px; text-overflow: ellipsis; padding: 10px;"> Unfollowers <span class="glyphicon glyphicon-chevron-right"> </span> </li>
-      <li class="jumbotron" style="position: relative; text-align: center; overflow: hidden; white-space: normal; margin: 2px; text-overflow: ellipsis; padding: 10px;"> Innactive Following <span class="glyphicon glyphicon-chevron-right"> </span> </li>
-      <li class="jumbotron" style="position: relative; text-align: center; overflow: hidden; white-space: normal; margin: 2px; text-overflow: ellipsis; padding: 10px;"> Copy Followers <span class="glyphicon glyphicon-chevron-right"> </span> </li>
-      <li class="jumbotron" style="position: relative; text-align: center; overflow: hidden; white-space: normal; margin: 2px; text-overflow: ellipsis; padding: 10px;"> White List <span class="glyphicon glyphicon-chevron-right"> </span> </li>
-      <li class="jumbotron" style="position: relative; text-align: center; overflow: hidden; white-space: normal; margin: 2px; text-overflow: ellipsis; padding: 10px;"> Black List <span class="glyphicon glyphicon-chevron-right"> </span> </li>
-    </ul>
-
-  </div>
-
-
- 
-
-
-
-  <div class="col-md-4">.col-md-4
-
-  </div>
+  
 
 </div>
 
  <div class="list-group; col-md-4">
-    <a href="#" class="list-group-item">Non Followers<span class="glyphicon glyphicon-chevron-right"> </span> </a>
+    <%= link_to "Non Followers", action: "nonfollowers" %></br>
+    <%= link_to "Fans", action: "fans" %>
     <a href="#" class="list-group-item">Fans <span class="glyphicon glyphicon-chevron-right"> </span> </a>
     <a href="#" class="list-group-item">Inactive Following <span class="glyphicon glyphicon-chevron-right"> </span> </a>
     <a href="#" class="list-group-item">Copy Followers <span class="glyphicon glyphicon-chevron-right"> </span> </a>
     <a href="#" class="list-group-item">White List <span class="glyphicon glyphicon-chevron-right"> </span> </a>
     <a href="#" class="list-group-item">Black List <span class="glyphicon glyphicon-chevron-right"> </span> </a>
   </div>
+
+
