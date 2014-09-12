@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140617103731) do
+ActiveRecord::Schema.define(version: 20140826134555) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "users", force: true do |t|
     t.string   "screen_name"
@@ -20,6 +23,13 @@ ActiveRecord::Schema.define(version: 20140617103731) do
     t.datetime "updated_at"
     t.text     "oauth_token"
     t.text     "oauth_secret"
+  end
+
+  create_table "whitelists", force: true do |t|
+    t.string   "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "whitelist_user_id"
   end
 
 end

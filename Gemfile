@@ -41,6 +41,7 @@ gem 'cloudinary'
 
 gem 'debugger'
 
+gem 'pg'
 
 
 group :doc do

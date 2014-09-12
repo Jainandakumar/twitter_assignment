@@ -11,6 +11,10 @@ TwitterAssignment::Application.routes.draw do
 
   get "users/nonfollowers"
   get "users/fans"
+  get "users/inactive_following"
+  get "users/following"
+  get "users/whitelist_user/:whitelist_user_id", controller: "users", action: "whitelist_user"
+  get "users/whitelist"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
