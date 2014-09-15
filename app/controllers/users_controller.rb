@@ -84,6 +84,7 @@ class UsersController < ApplicationController
 
   def whitelist_user
     home()
+    whitelist()
     user = User.find_by_user_id(@client.user.id)
     @whitelisted_user = Whitelist.new
     @whitelisted_user.user_id = user.id
