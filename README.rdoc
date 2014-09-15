@@ -26,3 +26,7 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2476a5bf013809e5ca1b04f509f92ee3bc57a2b6
