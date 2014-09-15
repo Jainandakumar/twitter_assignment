@@ -1,0 +1,9 @@
+<div class="col-md-4", class = "container-fluid"> 
+  <h4> Friends </h4>
+  <% @following.each do |friend| %>
+    <%= friend.name %>
+    <% if !@whitelisted_users.include? friend.id.to_s %>
+    	<a href = "/users/whitelist_user/<%= friend.id %> "> White List User</a> 
+    <%end%></br>
+  <% end %>
+</div>
