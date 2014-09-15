@@ -26,4 +26,4 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
-[ ![Codeship Status for Jainandakumar/twitter_assignment](https://codeship.io/projects/79aebe20-1efd-0132-0194-1ee5b7437bc8/status)](https://codeship.io/projects/35600)
+
