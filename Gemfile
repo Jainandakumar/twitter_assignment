@@ -39,8 +39,6 @@ gem 'carrierwave'
 
 gem 'cloudinary'
 
-gem 'debugger'
-
 gem 'pg'
 
 

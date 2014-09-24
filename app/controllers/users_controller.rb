@@ -26,23 +26,13 @@ class UsersController < ApplicationController
 
   def following
     home()
-<<<<<<< HEAD
-    # user = User.find_by_user_id(@client.user.id)
+    user = User.find_by_user_id(@client.user.id)
     @following = @client.friends.to_a
     # @whitelisted_users = []
     # for whitelist in user.whitelists
     #   @whitelisted_users.push(whitelist.whitelist_user_id)
     # end
     # puts @whitelisted_users
-=======
-    user = User.find_by_user_id(@client.user.id)
-    @following = @client.friends.to_a
-    @whitelisted_users = []
-    for whitelist in user.whitelists
-      @whitelisted_users.push(whitelist.whitelist_user_id)
-    end
-    puts @whitelisted_users
->>>>>>> 2476a5bf013809e5ca1b04f509f92ee3bc57a2b6
   end
     
   def nonfollowers
@@ -88,14 +78,12 @@ class UsersController < ApplicationController
     end 
   end
 
-<<<<<<< HEAD
   # def whitelist
   #   @whitelisted_user = Whitelist.new
   # end
 
   # def whitelist_user
   #   home()
-  #   whitelist()
   #   user = User.find_by_user_id(@client.user.id)
   #   @whitelisted_user = Whitelist.new
   #   @whitelisted_user.user_id = user.id
@@ -103,32 +91,11 @@ class UsersController < ApplicationController
   #   @whitelisted_user.save
   #   redirect_to "/users/following" 
   # end
-=======
-  def whitelist
-    @whitelisted_user = Whitelist.new
-  end
-
-  def whitelist_user
-    home()
-    whitelist()
-    user = User.find_by_user_id(@client.user.id)
-    @whitelisted_user = Whitelist.new
-    @whitelisted_user.user_id = user.id
-    @whitelisted_user.whitelist_user_id = params[:whitelist_user_id]
-    @whitelisted_user.save
-    redirect_to "/users/following" 
-  end
->>>>>>> 2476a5bf013809e5ca1b04f509f92ee3bc57a2b6
 
   def sign_out
     session[:access_token] = nil
     session[:access_secret] = nil
     redirect_to action: "sign_in"
   end
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 2476a5bf013809e5ca1b04f509f92ee3bc57a2b6
 end
 
